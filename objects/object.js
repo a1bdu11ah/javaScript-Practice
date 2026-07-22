@@ -22,3 +22,23 @@ JsUser.greeting1 = function () {
     console.log(`Hello from JsUser function ${this.name}, you are ${this.age} years old.`);
 }
 console.log(JsUser.greeting1());
+
+const instagramUser = {
+    username: "abdullah",
+    password: "12345",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Tuesday", "Wednesday"],
+};
+console.log(instagramUser.username);
+console.log(instagramUser.password);
+
+const users = {
+    email: "abdullah@gmail.com",
+    fullName:{
+        userFullName: {
+            firstName: "Abdullah",
+            lastName: "chaudry",
+        }
+    }
+};
+console.log(users.fullName.userFullName.firstName.at(3) + users.fullName.userFullName.lastName.at(5));
